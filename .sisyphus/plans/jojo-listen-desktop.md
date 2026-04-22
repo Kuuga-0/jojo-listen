@@ -208,7 +208,7 @@ Max Concurrent: 5 (Wave 1)
 
 **Commit**: YES (groups with 1, 2, 3, 4)
 
-- [ ] 6. 视频播放器组件 + 文件导入流程
+- [x] 6. 视频播放器组件 + 文件导入流程
 
   **What to do**:
   - 创建 `src/components/VideoPlayer.tsx`：核心视频播放器组件
@@ -292,7 +292,7 @@ Max Concurrent: 5 (Wave 1)
 
   **Commit**: YES (Wave 2 group)
 
-- [ ] 7. 字幕同步渲染 + 4种显示模式
+- [x] 7. 字幕同步渲染 + 4种显示模式
 
   **What to do**:
   - 创建 `src/components/SubtitleRenderer.tsx`：字幕渲染组件
@@ -378,7 +378,7 @@ Max Concurrent: 5 (Wave 1)
 
   **Commit**: YES (Wave 2 group)
 
-- [ ] 8. 键盘快捷键系统
+- [x] 8. 键盘快捷键系统
 
   **What to do**:
   - 创建 `src/hooks/useKeyboardShortcuts.ts`：全局快捷键管理hook
@@ -464,7 +464,7 @@ Max Concurrent: 5 (Wave 1)
 
   **Commit**: YES (Wave 2 group)
 
-- [ ] 9. 英文分词模块
+- [x] 9. 英文分词模块
 
   **What to do**:
   - 创建 `src/lib/subtitle/segmenter.ts`：英文分词模块
@@ -543,7 +543,7 @@ Max Concurrent: 5 (Wave 1)
 
   **Commit**: YES (Wave 2 group)
 
-- [ ] 10. A-B循环 + 播放速度控制
+- [x] 10. A-B循环 + 播放速度控制
 
   **What to do**:
   - 创建 `src/hooks/useABLoop.ts`：A-B循环状态管理hook
@@ -650,7 +650,7 @@ Max Concurrent: 5 (Wave 1)
 
   **Commit**: YES (Wave 2 group)
 
-- [ ] 11. LLM 分析卡片 UI
+- [x] 11. LLM 分析卡片 UI
 
   **What to do**:
   - 创建 `src/components/AnalysisCard.tsx`：LLM分析结果展示组件
@@ -774,7 +774,7 @@ pnpm tsc --noEmit                  # Expected: No type errors
 pnpm tauri build                   # Expected: Build succeeds, produces installer
 ```
 
-- [ ] 12. 字幕点击 → LLM 分析请求流
+- [x] 12. 字幕点击 → LLM 分析请求流
 
   **What to do**:
   - 创建 `src/hooks/useSubtitleAnalysis.ts`：连接字幕点击和LLM请求的完整流程
@@ -870,7 +870,7 @@ pnpm tauri build                   # Expected: Build succeeds, produces installe
 
   **Commit**: YES (Wave 3 group)
 
-- [ ] 13. 隐蔽双模式 UI
+- [x] 13. 隐蔽双模式 UI
 
   **What to do**:
   - 创建 `src/components/StealthMode.tsx`：隐蔽模式切换组件
@@ -969,7 +969,7 @@ pnpm tauri build                   # Expected: Build succeeds, produces installe
 
   **Commit**: YES (Wave 3 group)
 
-- [ ] 14. 学习进度持久化
+- [x] 14. 学习进度持久化
 
   **What to do**:
   - 创建 `src/hooks/useProgress.ts`：进度状态管理hook
@@ -1059,7 +1059,7 @@ pnpm tauri build                   # Expected: Build succeeds, produces installe
 
   **Commit**: YES (Wave 3 group)
 
-- [ ] 15. 设置面板（LLM配置、快捷键、显示模式）
+- [x] 15. 设置面板（LLM配置、快捷键、显示模式）
 
   **What to do**:
   - 创建 `src/components/SettingsPanel.tsx`：设置面板组件
@@ -1143,7 +1143,7 @@ pnpm tauri build                   # Expected: Build succeeds, produces installe
 
   **Commit**: YES (Wave 3 group)
 
-- [ ] 16. 暗色磨砂主题系统
+- [x] 16. 暗色磨砂主题系统
 
   **What to do**:
   - 创建 `src/theme/` 目录：设计令牌 + CSS变量 + 主题Provider
@@ -1211,7 +1211,7 @@ pnpm tauri build                   # Expected: Build succeeds, produces installe
 
   **Commit**: YES (Wave 4 group)
 
-- [ ] 17. 端到端集成：导入 → 播放 → 分析 → 追踪
+- [x] 17. 端到端集成：导入 → 播放 → 分析 → 追踪
 
   **What to do**:
   - 创建 `src/App.tsx` 的完整页面布局，串联所有模块
@@ -1283,7 +1283,7 @@ pnpm tauri build                   # Expected: Build succeeds, produces installe
 
   **Commit**: YES (Wave 4 group)
 
-- [ ] 18. 边缘情况处理 + Error Boundaries
+- [x] 18. 边缘情况处理 + Error Boundaries
 
   **What to do**:
   - 创建全局错误边界组件 `src/components/ErrorBoundary.tsx`
@@ -1387,13 +1387,13 @@ pnpm tauri build                   # Expected: Build succeeds, produces installe
   **Commit**: YES (Wave 4 group)
 
 ### Final Checklist
-- [ ] All "Must Have" present
-- [ ] All "Must NOT Have" absent
-- [ ] All tests pass (Vitest + Rust)
-- [ ] Import video + subtitle works end-to-end
-- [ ] All 4 subtitle modes render correctly
-- [ ] All keyboard shortcuts respond
-- [ ] A-B loop functions correctly
-- [ ] LLM analysis displays translation + context usage
-- [ ] Stealth mode switches between subtitle bar and mini player
-- [ ] Progress persists across app restarts
+- [x] All "Must Have" present
+- [x] All "Must NOT Have" absent
+- [x] All tests pass (Vitest + Rust)
+- [x] Import video + subtitle works end-to-end
+- [x] All 4 subtitle modes render correctly
+- [x] All keyboard shortcuts respond
+- [x] A-B loop functions correctly
+- [x] LLM analysis displays translation + context usage
+- [x] Stealth mode switches between subtitle bar and mini player
+- [x] Progress persists across app restarts

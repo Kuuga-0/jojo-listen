@@ -1,12 +1,32 @@
 {
-  "active_plan": "C:\\Users\\seasonshi\\code\\season\\jojo-listen\\.sisyphus\\plans\\jojo-listen-desktop.md",
-  "started_at": "2026-04-21T09:10:36.417Z",
+  "active_plan": "/Users/kuuga/code/jojo-listen/.sisyphus/plans/jojo-listen-desktop.md",
+  "started_at": "2026-04-21T10:26:13.177Z",
   "session_ids": [
-    "ses_250f3f02fffeF27p5T89hvbU3v"
+    "ses_2506c7f7affeJvxFW41kepu5Fx",
+    "ses_250695905ffec1iEB8kdG9pC2B",
+    "ses_25068ebf0ffemMYskYgQNNIwHm",
+    "ses_2505da4aeffeUWQTy24IHK8sDE",
+    "ses_2505e0546ffejGfGr8A8Ik6UDn",
+    "ses_2505d5056ffe6xW65JN2xfYDJq",
+    "ses_2504dab83ffegZ8o5Yji4sx0jF",
+    "ses_2504d2159ffedf1y4S15H76vz3",
+    "ses_2504d6589ffeMl22p4KUz4kUT6",
+    "ses_25047a9e2ffer09E8cDwnuG4Wm",
+    "ses_250477359fferVmRoNvPEqY7xv",
+    "ses_2504726e8ffePU7PvUM6sUJIvh",
+    "ses_24f312850ffe4AaVTJCzgV4Ew6",
+    "ses_24f2d2945ffejh6N9GTkWvWznY",
+    "ses_24f24086fffeOEF3XJtYdSyf5S",
+    "ses_24f1ea136ffex2z9QarWHSyK1j",
+    "ses_24f18c6d4ffe03P9oCMfdG3D9y",
+    "ses_24f129a08ffe6R64ASliW5ZtO3",
+    "ses_24f0d1ee7ffec0KtiJ6XqpqrhG",
+    "ses_24f044fb9ffewWA9qYi0m30lDz",
+    "ses_24f04a280ffeQjerQITlWAMs9o",
+    "ses_24f04b949ffe3U0cVlYVHpJxuP",
+    "ses_24f048c86ffelwkAtdvDJ0kpKH"
   ],
-  "session_origins": {
-    "ses_250f3f02fffeF27p5T89hvbU3v": "direct"
-  },
   "plan_name": "jojo-listen-desktop",
-  "agent": "atlas"
+  "agent": "atlas",
+  "task_sessions": {}
 }

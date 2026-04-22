@@ -53,7 +53,8 @@ pub fn run_migrations(conn: &Connection, app_data_dir: &Path) -> Result<()> {
             let sql_file = migrations_path.join(format!("{:03}_initial.sql", version));
             if sql_file.exists() {
                 log::info!("Applying migration version {}...", version);
-                let sql = std::fs::read_to_string(&sql_file)?;
+                let sql = std::fs::read_to_string(&sql_file)
+                    .map_err(|e| rusqlite::Error::ToSqlConversionFailure(e.into()))?;
                 conn.execute_batch(&sql)?;
                 log::info!("Migration version {} applied successfully", version);
             }

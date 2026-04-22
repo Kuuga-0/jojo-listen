@@ -1,0 +1,80 @@
+export const tokens = {
+  colors: {
+    bgPrimary: 'rgba(20, 20, 30, 0.85)',
+    bgSecondary: 'rgba(30, 30, 45, 0.9)',
+    bgTertiary: 'rgba(40, 40, 55, 0.95)',
+    textPrimary: '#e8e8f0',
+    textSecondary: '#a0a0b0',
+    textMuted: '#666',
+    accent: '#6c63ff',
+    accentHover: '#7b73ff',
+    error: '#f87171',
+    success: '#4ade80',
+    warning: '#fbbf24',
+    overlay: 'rgba(0, 0, 0, 0.5)',
+    border: 'rgba(255, 255, 255, 0.1)',
+    inputBg: 'rgba(255, 255, 255, 0.05)',
+  },
+  radii: {
+    sm: '8px',
+    md: '12px',
+    lg: '16px',
+  },
+  shadows: {
+    card: '0 8px 32px rgba(0, 0, 0, 0.3)',
+    button: '0 2px 8px rgba(0, 0, 0, 0.2)',
+  },
+  blur: {
+    md: 'blur(20px)',
+    lg: 'blur(40px)',
+  },
+  transitions: {
+    normal: '200ms ease-in-out',
+    slow: '300ms ease-in-out',
+  },
+  font: {
+    family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    sizes: {
+      xs: '10px',
+      sm: '12px',
+      md: '14px',
+      lg: '16px',
+      xl: '20px',
+    },
+  },
+} as const;
+
+export const cssVariables = {
+  '--bg-primary': tokens.colors.bgPrimary,
+  '--bg-secondary': tokens.colors.bgSecondary,
+  '--bg-tertiary': tokens.colors.bgTertiary,
+  '--text-primary': tokens.colors.textPrimary,
+  '--text-secondary': tokens.colors.textSecondary,
+  '--text-muted': tokens.colors.textMuted,
+  '--accent': tokens.colors.accent,
+  '--accent-hover': tokens.colors.accentHover,
+  '--error': tokens.colors.error,
+  '--success': tokens.colors.success,
+  '--warning': tokens.colors.warning,
+  '--overlay': tokens.colors.overlay,
+  '--border': tokens.colors.border,
+  '--input-bg': tokens.colors.inputBg,
+  '--radius-sm': tokens.radii.sm,
+  '--radius-md': tokens.radii.md,
+  '--radius-lg': tokens.radii.lg,
+  '--shadow-card': tokens.shadows.card,
+  '--shadow-button': tokens.shadows.button,
+  '--blur-md': tokens.blur.md,
+  '--blur-lg': tokens.blur.lg,
+  '--duration-normal': tokens.transitions.normal,
+  '--duration-slow': tokens.transitions.slow,
+  '--font-family': tokens.font.family,
+  '--font-size-xs': tokens.font.sizes.xs,
+  '--font-size-sm': tokens.font.sizes.sm,
+  '--font-size-md': tokens.font.sizes.md,
+  '--font-size-lg': tokens.font.sizes.lg,
+  '--font-size-xl': tokens.font.sizes.xl,
+} as const;
+
+export type ThemeTokens = typeof tokens;
+export type CSSVariables = typeof cssVariables;
